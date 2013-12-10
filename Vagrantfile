@@ -6,7 +6,7 @@ Vagrant.configure("2") do |config|
   # options are documented and commented below. For a complete reference,
   # please see the online documentation at vagrantup.com.
 
-  config.vm.hostname = "promet_mysql-cookbook-berkshelf"
+  config.vm.hostname = "promet-mysql-cookbook-berkshelf"
   config.omnibus.chef_version = :latest
 
   # Every Vagrant virtual environment requires a box to build off of.
@@ -90,7 +90,6 @@ Vagrant.configure("2") do |config|
 
     chef.run_list = [
         "recipe[apt]",
-        "recipe[mysql::server]",
         "recipe[promet_mysql-cookbook]",
         "recipe[promet_mysql-cookbook::mytop]",
         "recipe[promet_mysql-cookbook::my_root]"
