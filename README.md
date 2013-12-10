@@ -24,7 +24,7 @@ Then utilize the out-of-the-box tunables, as well as additions in your Vagrantfi
 ````
     chef.json = {
         :mysql => {
-          :server_root_password => 'somepass',
+          :server_root_password => 'rootpass',
           :server_debian_password => 'debpass',
           :server_repl_password => 'replpass',
           :remove_anonymous_users => "true",
