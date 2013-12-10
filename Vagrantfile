@@ -90,7 +90,6 @@ Vagrant.configure("2") do |config|
 
     chef.run_list = [
         "recipe[apt]",
-        "recipe[mysql::server]",
         "recipe[promet_mysql-cookbook]",
         "recipe[promet_mysql-cookbook::mytop]",
         "recipe[promet_mysql-cookbook::my_root]"

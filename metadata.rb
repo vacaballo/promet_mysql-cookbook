@@ -1,6 +1,6 @@
 name             'promet_mysql-cookbook'
-maintainer       'YOUR_NAME'
-maintainer_email 'YOUR_EMAIL'
+maintainer       'gregpalmier'
+maintainer_email 'gregpalmier@gmail.com'
 license          'All rights reserved'
 description      'Installs/Configures promet_mysql-cookbook'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
