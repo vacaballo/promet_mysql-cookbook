@@ -19,7 +19,7 @@ Vagrant.configure("2") do |config|
   # via the IP. Host-only networks can talk to the host machine as well as
   # any other machines on the same network, but cannot be accessed (through this
   # network interface) by any external networks.
-  config.vm.network :private_network, ip: "33.33.33.10"
+  config.vm.network :private_network, ip: "10.33.33.34"
 
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
@@ -91,9 +91,9 @@ Vagrant.configure("2") do |config|
 
     chef.run_list = [
         "recipe[apt]",
-        "recipe[promet_mysql-cookbook]",
-        "recipe[promet_mysql-cookbook::mytop]",
-        "recipe[promet_mysql-cookbook::my_root]"
+        "recipe[promet_mysql]",
+        "recipe[promet_mysql::mytop]",
+        "recipe[promet_mysql::my_root]"
     ]
   end
 end

@@ -23,5 +23,5 @@ platforms:
 
 suites:
 - name: default
-  run_list: ["recipe[promet_mysql-cookbook]"]
+  run_list: ["recipe[promet_mysql]"]
   attributes: {}
