@@ -1,4 +1,4 @@
-name             'promet_mysql'
+name             'promet_mysql-cookbook'
 maintainer       'Promet Solutions, Inc.'
 maintainer_email 'gregpalmier@gmail.com'
 license          'All rights reserved'
